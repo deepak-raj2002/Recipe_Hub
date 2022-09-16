@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Food-Recipes</title>
+
+      <link rel="stylesheet" type="text/css" href="/CSSfile/main.css">
+      <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  </head>
+  <body>
+    <br>
+    <div>
+    <span style="font-size: 45px;margin-top: 150px; margin-left: 50px;"><span style="color:#ff9900">RE</span><span style="color:blue">CIPES</span></span>
+    <span style="margin-left: 1100px;color:black">
+      <a href="/index.html">Logout</a></span>
+    </div><center>
+    <form name="search"action="" method="POST">
+      <input type="text"  id="search" name="reg" placeholder="Search...">
+    </form></center>
+     <br><br>
+     <center>
+     <table id="t" style="color:white">
+      <tr>
+        <td class="content"><a style="text-decoration:none;" href = "/htmlfile/pizza.html"><button>Pizza</button></a></td>
+        <td class="content"><a style="text-decoration:none;" href = "/htmlfile/pasta.html"><button>Pasta</button></a></td>
+        <td class="content"><a style="text-decoration:none;" href = "/htmlfile/burger.html"><button>Burger</button></a></td>
+      </tr>
+      <tr>
+        <td class="content"><a style="text-decoration:none;" href = "/htmlfile/noodles.html"><button>Noodles</button></a></td>
+        <td class="content"><a style="text-decoration:none;" href = "/htmlfile/hs.html"><button>Chinese Hot and Sour Soup</button></a></td>
+        <td class="content"><a style="text-decoration:none;" href = "/htmlfile/cgs.html"><button>Carrot Ginger Soup</button></a></td>
+      </tr>
+      <tr>
+        <td class="content"><a style="text-decoration:none;" href = "/htmlfile/breadroll.html"><button>Bread Roll</button></a></td>
+        <td class="content"><a style="text-decoration:none;" href = "/htmlfile/ps.html"><button>Paneer Sandwich</button></a></td>
+        <td class="content"><a style="text-decoration:none;" href = "/htmlfile/vegetablemaggie.html"><button>Vegetable Maggie</button></a></td>
+      </tr>
+      <tr>
+        <td class="content"><a style="text-decoration:none;" href = "/htmlfile/frenchtoast.html"><button>French Toast</button></a></td>
+        <td class="content"><a style="text-decoration:none;" href = "/htmlfile/tacos.html"><button>Tacos</button></a></td>
+        <td class="content"><a style="text-decoration:none;" href = "/htmlfile/momos.html"><button>Momos</button></a></td>
+      </tr>
+      <tr>
+        <td class="content"><a style="text-decoration:none;" href = "/htmlfile/pt.html"><button>Paneer Tikka</button></a></td>
+        <td class="content"><a style="text-decoration:none;" href = "/htmlfile/ccb.html"><button>Crispy Chilly Babycorn</button></a></td>
+        <td class="content"><a style="text-decoration:none;" href = "/htmlfile/ac.html"><button>American Chopsuey</button></a></td>
+      </tr>
+      <tr>
+        <td class="content"><a style="text-decoration:none;" href = "/htmlfile/q.html"><button>Quesadilla</button></a></td>
+        <td class="content"><a style="text-decoration:none;" href = "/htmlfile/chococake.html"><button>Chocolate Cake</button></a></td>
+        <td class="content"><a style="text-decoration:none;" href = "/htmlfile/lbp.html"><button>Lemon Bar Peeps</button></a></td>
+      </tr>
+      <tr>
+        <td class="content"><a style="text-decoration:none;" href = "/htmlfile/sbpie.html"><button>Strawberry Pie</button></a></td>
+        <td class="content"><a style="text-decoration:none;" href = "/htmlfile/tiramisu.html"><button>Tiramisu</button></a></td>
+        <td class="content"><a style="text-decoration:none;" href = "/htmlfile/pc.html"><button>Panna Cotta</button></a></td>
+      </tr>
+      <tr>
+        <td class="content"><a style="text-decoration:none;" href = "/htmlfile/bmc.html"><button>Blueberry Muffin Cake</button></a></td>
+        <td class="content"><a style="text-decoration:none;" href = "/htmlfile/cheesecake.html"><button>Cheesecake</button></a></td>
+        <td class="content"><a style="text-decoration:none;" href = "/htmlfile/cm.html"><button>Chocolate Milkshake</button></a></td>
+      </tr>
+    </table>
+  </center>
+  </body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<script>
+ $(document).ready(function(){
+ $('#search').keyup(function(){
+  var text = $(this).val();
+  $('.content').hide();
+  $('.content:contains("'+text+'")').show();
+ 
+ });
+});
+
+</script>
+</html>
+              
